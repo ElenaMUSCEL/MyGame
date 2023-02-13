@@ -3,7 +3,7 @@ public class GameGuess {
         Player p1;
         Player p2;
         Player p3;
-        private int number;
+        public int number;
 
         public void startGame() {
             p1 = new Player();
@@ -11,8 +11,8 @@ public class GameGuess {
             p3 = new Player();
 
             int guessp1 = 0;
-            int guessp2 = 0;
-            int guessp3 = 0;
+            int guessp2 = 6;
+            int guessp3 = 8;
             boolean p1isRight = false;
             boolean p2isRight = false;
             boolean p3isRight = false;
@@ -50,6 +50,9 @@ public class GameGuess {
                     System.out.println("Players will have to try again.");
                 }
             }
+        }
+
+        private void guess() {
         }
     }
 }
