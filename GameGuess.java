@@ -51,9 +51,6 @@ public class GameGuess {
                 }
             }
         }
-        private void guess() {
-        }
-
     }
 }
 
