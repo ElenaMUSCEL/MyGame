@@ -52,9 +52,10 @@ public class GameGuess {
                     }
                 }
             }
-    }
-        private void guess() {
+
+            private void guess() {
+            }
         }
     }
-}
+    }
 
