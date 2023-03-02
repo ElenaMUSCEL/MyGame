@@ -4,21 +4,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Students {
-    public static void main(String[] args) {
-        ArrayList student = new ArrayList();
-        student.add("Maria");
-        student.add("Ion");
-        student.add("George");
-        student.add("Andreea");
-        student.add("Bianca");
-        student.add("Cristina");
-        student.add("Tudor");
-        student.add("Alin");
-        student.add("Stefan");
-        student.add("Denisa");
-        ArrayList graduateStudent = new ArrayList();
-        graduateStudent.addAll(student);
-        System.out.println(graduateStudent);
+    public static <Graduated> void main(String[] args) {
+        List<String> studentsArrayList = new ArrayList<>();
 
+        studentsArrayList.add("Maria");
+        studentsArrayList.add("Ion");
+        studentsArrayList.add("George");
+        studentsArrayList.add("Andreea");
+        studentsArrayList.add("Bianca");
+        studentsArrayList.add("Cristina");
+        studentsArrayList.add("Tudor");
+        studentsArrayList.add("Alin");
+        studentsArrayList.add("Stefan");
+        studentsArrayList.add("Denisa");
+        List<String>graduatedArrayList = new ArrayList<>();
+
+        for(String student : studentsArrayList) {
+            graduatedArrayList.add(student);
+            System.out.println(graduatedArrayList);
         }
-    }
+      }
+
+}
